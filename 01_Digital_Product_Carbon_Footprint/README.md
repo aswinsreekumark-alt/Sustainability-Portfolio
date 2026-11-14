@@ -121,4 +121,46 @@ These are illustrative scenarios, not measured factory energy consumption or ind
 | File | Description |
 |---|---|
 | `Motor_Engineering_BOM.xlsx` | Original illustrative engineering BOM |
-| `Cleaned_Motor_B
+| `Cleaned_Motor_BOM.xlsx` | Cleaned BOM and quality checks |
+| `01_bom_data_cleaning.py` | Python BOM cleaning script |
+| `02_load_bom_to_sqlite.py` | SQLite database loading script |
+| `Motor_PCF_Database.db` | Structured BOM database |
+| `Environmental_Dataset_Register.xlsx` | Environmental dataset register and BOM mapping |
+| `Motor_PCF_IPCC2021_GWP100_Results.xlsx` | Initial openLCA results |
+| `Motor_PCF_IPCC2021_GWP100_With_Electricity.xlsx` | openLCA results including illustrative electricity |
+| `PCF_Calculation_Summary.md` | Calculation methodology, results and limitations |
+| `Digital_Product_Carbon_Footprint_Dashboard.pbix` | Interactive Power BI dashboard |
+| `Digital_Product_Carbon_Footprint_Dashboard.pdf` | Dashboard PDF report |
+
+## 8. Assumptions and Limitations
+
+- The motor BOM is simulated and is not manufacturer-supplied.
+- Manufacturing electricity consumption is an illustrative assumption, not measured data.
+- The electrical-steel stator and rotor cores are represented using a low-alloyed steel proxy.
+- Plastic and insulation material selections are provisional assumptions.
+- Individual manufacturing operations, scrap and material losses, packaging, and other factory inputs are not fully represented.
+- The model should be treated as a preliminary demonstration rather than a verified product carbon footprint or Environmental Product Declaration.
+
+## 9. Key Learning Outcomes
+
+- Engineering BOM data structuring and validation.
+- Python-based environmental data preparation.
+- SQL database development and data management.
+- Environmental dataset selection and mapping.
+- Product-level LCA modelling in openLCA.
+- GWP100 impact assessment and contribution analysis.
+- Sensitivity analysis and Power BI reporting.
+- Documentation of data quality, assumptions and modelling limitations.
+
+## 10. Project Deliverables
+
+- [Power BI Dashboard PDF](Digital_Product_Carbon_Footprint_Dashboard.pdf)
+- [PCF Calculation Summary](PCF_Calculation_Summary.md)
+- [Initial openLCA Results](Motor_PCF_IPCC2021_GWP100_Results.xlsx)
+- [openLCA Results with Electricity](Motor_PCF_IPCC2021_GWP100_With_Electricity.xlsx)
+
+The interactive `.pbix` dashboard can be opened using Microsoft Power BI Desktop.
+
+---
+
+**Project Focus:** Product Sustainability | Product Carbon Footprinting | Life Cycle Assessment | Environmental Data Analytics | BOM Automation
